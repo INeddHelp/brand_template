@@ -400,5 +400,31 @@
         }
 
     }
+
+    let screenWidth = window.innerWidth;
+
+    function updateScreenWidth() {
+        screenWidth = window.innerWidth;
+        adjustREMSize();
+    }
+
+    function adjustREMSize() {
+        const cards = document.querySelectorAll('.card');
+
+        if (screenWidth <= 600) {
+            cards.forEach(card => {
+                card.style.width = '22rem';
+            });
+        } else {
+            cards.forEach(card => {
+                card.style.width = '18rem';
+            });
+        }
+    }
+
+    adjustREMSize();
+
+    window.addEventListener("resize", updateScreenWidth);
+
 </script>
 </body>
