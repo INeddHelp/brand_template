@@ -877,6 +877,7 @@
         placeorder.style.display = "block"
 
         document.getElementById(`OID${OID}`).style.display = "block"
+        adjustREMSize()
 
     }
 
@@ -906,7 +907,7 @@
             cards.forEach(card => {
 
                 card.style.marginRight = '0px';
-                document.getElementById("secondCheckoutSection").style.paddingTop = "0"
+                document.getElementById("secondCheckoutSection").style.marginTop = "0"
 
                 if (homepageSection.style.display === "none") {
                     card.style.width = '18rem';
