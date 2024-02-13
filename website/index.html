@@ -45,7 +45,7 @@
         </header>
 
         <div class="input-group mb-3">
-            <input type="text" class="form-control" aria-label="Look for an item" value="Look for an item" id="searchInput">
+            <input type="text" class="form-control" aria-label="Look for an item" placeholder="Look for an item" id="searchInput">
             <span class="input-group-text">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -386,11 +386,57 @@
         <div class="row g-5">
             <div class="col-md-5 col-lg-4 order-md-last">
                 <div class="container pt-5">
-                    <p class="fs-2">Versace Chain Reaction</p>
-                    <div class="card mb-3 col-md-3" style="width: 18rem;">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap">
-                            <image href="https://us03-imgcdn.ymcart.com/79615/2022/03/14/4/2/42c04dac5d0f3197.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_700,h_1000" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
-                        </svg>
+                    <div class="align-items-center text-center pb-3">
+                        <p class="fs-2">Versace Chain Reaction</p>
+                        <div class="card col-md-3" style="width: 24rem; margin-right: 45px!important; margin-left: 45px!important;">
+                            <div class="d-flex justify-content-center">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap">
+                                    <image href="https://us03-imgcdn.ymcart.com/79615/2022/03/14/4/2/42c04dac5d0f3197.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_700,h_1000" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-6 col-sm-6 col-md-6">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" placeholder="0" value="1" required min="1">
+                            <div class="invalid-feedback">
+                                Please enter a valid quantity.
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6">
+                            <label for="size" class="form-label">Size</label>
+                            <select class="form-select" id="size" required>
+                                <option value="" disabled selected>Select size</option>
+                                <option value="Iphone 14 (Pro Max)">Iphone 14 (Pro Max)</option>
+                                <option value="Iphone 14 (Pro)">Iphone 14 (Pro)</option>
+                                <option value="Iphone 14 (Plus)">Iphone 14 (Plus)</option>
+                                <option value="Iphone 14">Iphone 14</option>
+                                <option value="Iphone 13 (Pro Max)">Iphone 13 (Pro Max)</option>
+                                <option value="Iphone 13 (Pro)">Iphone 13 (Pro)</option>
+                                <option value="Iphone 13 (Mini)">Iphone 13 (Mini)</option>
+                                <option value="Iphone 13">Iphone 13</option>
+                                <option value="Iphone 12 (Pro Max)">Iphone 12 (Pro Max)</option>
+                                <option value="Iphone 12 (Pro)">Iphone 12 (Pro)</option>
+                                <option value="Iphone 12 (Mini)">Iphone 12 (Mini)</option>
+                                <option value="Iphone 12">Iphone 12</option>
+                                <option value="Iphone 11 (Pro Max)">Iphone 11 (Pro Max)</option>
+                                <option value="Iphone 11 (Pro)">Iphone 11 (Pro)</option>
+                                <option value="Iphone 11">Iphone 11</option>
+                                <option value="Google Pixel 6 (Pro)">Google Pixel 6 (Pro)</option>
+                                <option value="Google Pixel 6">Google Pixel 6</option>
+                                <option value="Samsung Galaxy S22 (Plus)">Samsung Galaxy S22 (Plus)</option>
+                                <option value="Samsung Galaxy S22 (Ultra)">Samsung Galaxy S22 (Ultra)</option>
+                                <option value="Samsung Galaxy S22">Samsung Galaxy S22</option>
+                                <option value="Samsung Galaxy S21 (Plus)">Samsung Galaxy S21 (Plus)</option>
+                                <option value="Samsung Galaxy S21 (Ultra)">Samsung Galaxy S21 (Ultra)</option>
+                                <option value="Samsung Galaxy S21 (FE)">Samsung Galaxy S21 (FE)</option>
+                                <option value="Samsung Galaxy S21">Samsung Galaxy S21</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a size.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -399,51 +445,10 @@
                     <main>
                         <div class="row g-5">
                             <div class="col-12">
-                                <h4 class="mb-3"><span style="font-weight: bold">Checkout.</span></h4>
+                                <h4 class="mb-3"><span style="font-weight: bold">Checkout</span></h4>
                                 <p class="lead" style="font-weight: bold"> Price: 39.99&euro; per T-Shirt</p>
-                                <div class="row g-3">
-                                    <div class="col-6 col-sm-6 col-md-6">
-                                        <label for="quantity" class="form-label">Quantity</label>
-                                        <input type="number" class="form-control" id="quantity" placeholder="0" value="1" required min="1">
-                                        <div class="invalid-feedback">
-                                            Please enter a valid quantity.
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-6 col-md-6">
-                                        <label for="size" class="form-label">Size</label>
-                                        <select class="form-select" id="size" required>
-                                            <option value="" disabled selected>Select size</option>
-                                            <option value="Iphone 14 (Pro Max)">Iphone 14 (Pro Max)</option>
-                                            <option value="Iphone 14 (Pro)">Iphone 14 (Pro)</option>
-                                            <option value="Iphone 14 (Plus)">Iphone 14 (Plus)</option>
-                                            <option value="Iphone 14">Iphone 14</option>
-                                            <option value="Iphone 13 (Pro Max)">Iphone 13 (Pro Max)</option>
-                                            <option value="Iphone 13 (Pro)">Iphone 13 (Pro)</option>
-                                            <option value="Iphone 13 (Mini)">Iphone 13 (Mini)</option>
-                                            <option value="Iphone 13">Iphone 13</option>
-                                            <option value="Iphone 12 (Pro Max)">Iphone 12 (Pro Max)</option>
-                                            <option value="Iphone 12 (Pro)">Iphone 12 (Pro)</option>
-                                            <option value="Iphone 12 (Mini)">Iphone 12 (Mini)</option>
-                                            <option value="Iphone 12">Iphone 12</option>
-                                            <option value="Iphone 11 (Pro Max)">Iphone 11 (Pro Max)</option>
-                                            <option value="Iphone 11 (Pro)">Iphone 11 (Pro)</option>
-                                            <option value="Iphone 11">Iphone 11</option>
-                                            <option value="Google Pixel 6 (Pro)">Google Pixel 6 (Pro)</option>
-                                            <option value="Google Pixel 6">Google Pixel 6</option>
-                                            <option value="Samsung Galaxy S22 (Plus)">Samsung Galaxy S22 (Plus)</option>
-                                            <option value="Samsung Galaxy S22 (Ultra)">Samsung Galaxy S22 (Ultra)</option>
-                                            <option value="Samsung Galaxy S22">Samsung Galaxy S22</option>
-                                            <option value="Samsung Galaxy S21 (Plus)">Samsung Galaxy S21 (Plus)</option>
-                                            <option value="Samsung Galaxy S21 (Ultra)">Samsung Galaxy S21 (Ultra)</option>
-                                            <option value="Samsung Galaxy S21 (FE)">Samsung Galaxy S21 (FE)</option>
-                                            <option value="Samsung Galaxy S21">Samsung Galaxy S21</option>
-                                        </select>
-                                        <div class="invalid-feedback">
-                                            Please select a size.
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="my-4">
+
+                                <hr class="my-3">
                                 <form class="needs-validation" id="paymentdiv" novalidate="">
                                     <div class="row g-3">
                                         <div class="col-6 col-sm-12 col-md-12">
@@ -839,25 +844,25 @@
     function headerOptions(option) {
 
         if (option === "all" && allSection.style.display === "none") {
-            searchInput.value = "Look for an item"
+            searchInput.placeholder = "Look for an item"
             allSection.style.display = "flex";
             tshirtSection.style.display = "none"
             hoodiesSection.style.display = "none"
             shoesSection.style.display = "none"
         } else if (option === "t-shirts" && tshirtSection.style.display === "none") {
-            searchInput.value = "T-Shirts"
+            searchInput.placeholder = "T-Shirts"
             tshirtSection.style.display = "flex";
             allSection.style.display = "none"
             hoodiesSection.style.display = "none"
             shoesSection.style.display = "none"
         } else if (option === "hoodies" && hoodiesSection.style.display === "none") {
-            searchInput.value = "Hoodies"
+            searchInput.placeholder = "Hoodies"
             hoodiesSection.style.display = "flex"
             allSection.style.display = "none"
             tshirtSection.style.display = "none"
             shoesSection.style.display = "none"
         } else if (option === "shoes" && shoesSection.style.display === "none") {
-            searchInput.value = "Shoes"
+            searchInput.placeholder = "Shoes"
             shoesSection.style.display = "flex"
             allSection.style.display = "none"
             tshirtSection.style.display = "none"
