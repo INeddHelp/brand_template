@@ -388,7 +388,7 @@
                 <div class="container pt-5">
                     <div class="align-items-center pb-3">
                         <p class="fs-2">Versace Chain Reaction</p>
-                        <div class="card col-md-3" style="width: 24rem;">
+                        <div class="card col-md-3">
                             <div class="d-flex justify-content-center">
                                 <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap">
                                     <image href="https://us03-imgcdn.ymcart.com/79615/2022/03/14/4/2/42c04dac5d0f3197.jpg?x-oss-process=image/quality,Q_90/auto-orient,1/resize,m_lfit,w_700,h_1000" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
@@ -904,17 +904,25 @@
 
         if (screenWidth <= 770) {
             cards.forEach(card => {
-                card.style.width = '24rem';
+
                 card.style.marginRight = '0px';
+
+                if (homepageSection.style.display === "none") {
+                    card.style.width = '18rem';
+                } else {
+                    card.style.width = '24rem';
+                }
+
             });
         } else {
             cards.forEach(card => {
-                card.style.width = '18rem';
 
                 if (homepageSection.style.display === "block") {
                     card.style.marginRight = '24px'
+                    card.style.width = '18rem';
                 } else {
                     card.style.marginRight = '0'
+                    card.style.width = '24rem';
                 }
 
             });
