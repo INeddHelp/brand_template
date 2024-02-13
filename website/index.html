@@ -441,7 +441,7 @@
                 </div>
             </div>
             <div class="col-md-7 col-lg-8">
-                <div class="container pt-5">
+                <div id="secondCheckoutSection" class="container pt-5">
                     <main>
                         <div class="row g-5">
                             <div class="col-12">
@@ -906,6 +906,7 @@
             cards.forEach(card => {
 
                 card.style.marginRight = '0px';
+                document.getElementById("secondCheckoutSection").style.paddingTop = "0"
 
                 if (homepageSection.style.display === "none") {
                     card.style.width = '18rem';
