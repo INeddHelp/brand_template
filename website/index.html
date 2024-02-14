@@ -385,13 +385,13 @@
 
         <div class="row g-5">
             <div class="col-md-5 col-lg-4 order-md-last pt-3" id="firstCheckoutSection">
+                <button type="button" class="btn btn-outline-secondary" onclick="placeOrder('back')" style="display: none" id="backButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+                    </svg>
+                    <span class="visually-hidden">Button</span>
+                </button>
                 <div class="container">
-                    <button type="button" class="btn btn-outline-secondary" onclick="placeOrder('back')" style="display: none" id="backButton1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
-                        </svg>
-                        <span class="visually-hidden">Button</span>
-                    </button>
                     <div class="align-items-center pb-3">
                         <p class="fs-2" style="font-weight: bold">Versace Chain Reaction</p>
                         <div class="card col-md-3">
@@ -447,12 +447,6 @@
                 </div>
             </div>
             <div class="col-md-7 col-lg-8" id="secondCheckoutSection">
-                <button type="button" class="btn btn-outline-secondary" onclick="placeOrder('back')" style="display: none" id="backButton2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
-                    </svg>
-                    <span class="visually-hidden">Button</span>
-                </button>
                 <div class="container pt-5">
                     <main>
                         <div class="row g-5">
@@ -982,10 +976,11 @@
 
                 if (homepageSection.style.display === "none") {
                     card.style.width = '18rem';
-                    document.getElementById("backButton1").style.display = "block"
+                    document.getElementById("backButton")
+                    document.getElementById("backButton").style.display = "block"
                     document.getElementById("secondCheckoutSection").style.marginTop = "0"
-                    document.getElementById("backButton2").style.height = "42px"
-                    document.getElementById("backButton2").style.marginBottom = "12px"
+                    document.getElementById("backButton").style.height = "42px"
+                    document.getElementById("backButton").style.marginBottom = "12px"
                 } else {
                     card.style.width = '24rem';
                 }
@@ -998,11 +993,11 @@
                     card.style.marginRight = '24px'
                     card.style.width = '18rem';
                 } else {
-                    document.getElementById("backButton2").style.display = "block"
-                    document.getElementById("backButton2").style.position = "absolute"
-                    document.getElementById("backButton2").style.left = "20px"
-                    document.getElementById("backButton2").style.top = "20px"
-                    document.getElementById("backButton2").style.height = "42px"
+                    document.getElementById("backButton").style.display = "block"
+                    document.getElementById("backButton").style.position = "absolute"
+                    document.getElementById("backButton").style.left = "20px"
+                    document.getElementById("backButton").style.top = "20px"
+                    document.getElementById("backButton").style.height = "42px"
                     card.style.marginRight = '0'
                     card.style.width = '24rem';
                 }
